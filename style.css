@@ -1,5 +1,14 @@
+/* Variables */
+:root {
+    --blue: hsl(233, 100%, 69%);
+    --cyan: hsl(171, 66%, 44%);
+    --grey: hsl(201, 11%, 66%);
+    --dark-grey: hsl(210, 10%, 33%);
+}
+
 * {
     margin: 0;
+    font-family: 'Bai Jamjuree', 'arial';
 }
 
 
