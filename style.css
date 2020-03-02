@@ -153,15 +153,35 @@ footer {
     background-color: #f5f5f8;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 20vh;
 }
 
-.footer-logo {
-    display: flex;
-
+.footer-col {
+    margin: 0 7%;
 }
 
-.footer-links {
-    display: flex;
-    list-style: none;
+#footer-logo {
+    max-height: 7vh;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: var(--grey);
+    padding: 5%;
+    align-items: baseline;
+    line-height: 40px;
+}
+
+.social-icons {
+    max-height: 3vh;
+    padding: 10px;
+}
+
+#attribution {
+    background-color: #f5f5f8;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
 }
