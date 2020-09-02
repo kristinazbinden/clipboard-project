@@ -40,7 +40,7 @@ p {
 
 header {
     background-image: url('images/bg-header-desktop.png');
-    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
