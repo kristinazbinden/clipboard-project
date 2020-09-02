@@ -107,19 +107,19 @@ button:focus {
     margin: 10px;
 }
 
-#features {
+.features {
     display: flex;
     align-items:
 
     margin-bottom: 10%;
 }
 
-#features>img {
+.features>img {
     width: 50%;
     margin-left: -85px;
 }
 
-#features>ul {
+.features>ul {
     list-style: none;
     padding: 5% 8% 0;
 }
@@ -197,7 +197,6 @@ footer {
 
 .col-3 {
     align-self: center;
-    justify-content: flex-end;
 }
 
 .col-1>img {
@@ -233,4 +232,244 @@ footer {
     background-color: #f5f5f8;
     text-align: center;
     padding: 20px;
+}
+
+
+
+/* For Mobile Screens */
+@media (max-width: 900px) {
+    * {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    h1, h2, h3 {
+        color: var(--dark-grey);
+        padding: 5px 0;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin: 5px 0;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        color: var(--grey);
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: .5px;
+        line-height: 25px;
+    }
+
+    header {
+        background-image: url('images/bg-header-desktop.png');
+        background-size: 100vw 50vh;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20% 3%;
+    }
+
+    #header-logo {
+        max-width: 30vw;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    header>p {
+        margin: 0;
+        text-align: center;
+    }
+
+    button {
+        margin: 10px 10px;
+        padding: 15px 40px;
+        border-radius: 40px;
+        color: white;
+        font-size: 18px;
+    }
+
+    button:hover {
+        cursor: pointer;
+        border: none;
+    }
+
+    button:focus {
+        outline: 0;
+    }
+
+    .green-button {
+        background-color: var(--cyan);
+        border: none;
+        box-shadow: -1px 2px 5px .5px rgba(38,150,132,1);
+        -webkit-box-shadow: -1px 2px 5px ,5px rgba(38,150,132,1);
+        -moz-box-shadow: -1px 2px 5px .5px rgba(38,150,132,1);
+    }
+
+    .blue-button {
+        background-color: var(--blue);
+        border: none;
+        box-shadow: -1px 2px 3px 0.5px rgba(98,116,253,1);
+        -webkit-box-shadow: -1px 2px 3px 0.5px rgba(98,116,253,1);
+        -moz-box-shadow: -1px 2px 3px 0.5px rgba(98,116,253,1);
+    }
+
+    .divider {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin: 8% 10%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .divider>p {
+        margin: 10px;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10%;
+    }
+
+    .features>img {
+        width: 60%;
+        margin: 0;
+    }
+
+    .features>ul {
+        list-style: none;
+        padding: 10% 0;
+    }
+
+    .list-item {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+        width: 100vw;
+    }
+
+    .list-item>p {
+        font-size: 14px;
+    }
+
+    #responsive-screens {
+        align-items: center;
+    }
+
+    #responsive-screens>img {
+        width: 80%;
+    }
+
+    #columns {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10%;
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex: 1;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .cards>img {
+        width: 15%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    .cards>p {
+        font-size: 20px;
+    }
+
+    #brands {
+        display: flex;
+        align-items: center;
+        margin: 0%;
+    }
+
+    #brands>img {
+        width: 40%;
+        margin: 10%;
+    }
+
+    footer {
+        padding: 0 100px;
+        background-color: #f5f5f8;
+        display: flex;
+        justify-content: space-around;
+        height: 20vh;
+    }
+
+    .col-1 {
+        align-self: center;
+    }
+
+    .col-2 {
+        align-self: center;
+        flex-basis: 50%;
+    }
+
+    .col-3 {
+        align-self: center;
+    }
+
+    .col-1>img {
+        max-height: 7vh;
+    }
+
+    .footer-link {
+        text-decoration: none;
+        color: var(--grey);
+        font-size: 24px;
+        padding-left: 10%;
+        line-height: 50px;
+    }
+
+    .footer-link:hover {
+        color: var(--cyan);
+        cursor: pointer;
+    }
+
+    .col-3>img {
+        height: 3vh;
+        padding: 10px;
+    }
+
+    .col-3>img:hover {
+        /* I converted the hex color to filter using this codepen: https://codepen.io/sosuke/pen/Pjoqqp */
+        filter: invert(55%) sepia(43%) saturate(654%) hue-rotate(121deg) brightness(102%) contrast(93%);
+        cursor: pointer;
+    }
+
+    #attribution {
+        font-size: 22px;
+        background-color: #f5f5f8;
+        text-align: center;
+        padding: 20px;
+    }
+
 }
