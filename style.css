@@ -19,15 +19,16 @@ h1, h2, h3 {
 
 h1 {
     font-size: 60px;
+    text-align: center;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 48px;
     margin: 10px 0;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 p {
@@ -42,7 +43,7 @@ header {
     background-image: url('images/bg-header-desktop.png');
     background-size: 100vw 50vh;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,19 +98,21 @@ button:focus {
     display: flex;
     flex-direction: column;
     align-items:center;
-    margin: 0 19% 10%;
-    padding: 20px 140px;
+    margin: 8% 10%;
+    padding: 0 280px;
     text-align: center;
 }
 
 #features {
     display: flex;
+    align-items:
+
     margin-bottom: 10%;
 }
 
 #features>img {
-    max-height: 80vh;
-    margin-left: -90px;
+    width: 50%;
+    margin-left: -85px;
 }
 
 #features>ul {
@@ -119,17 +122,31 @@ button:focus {
 
 .list-item {
     margin-bottom: 30px;
+    max-width: 23vw;
+    padding-left: 40px;
+}
+
+.list-item>h3 {
+    font-size: 30px;
+}
+
+.list-item>p {
+    font-size: 20px;
 }
 
 #responsive-screens {
     display: flex;
     justify-content: center;
-    margin-bottom: 5%;
+}
+
+#responsive-screens>img {
+    width: 60%;
 }
 
 #columns {
     display: flex;
     flex-direction: row;
+    margin: 10%;
 }
 
 .cards {
@@ -138,7 +155,7 @@ button:focus {
     flex-direction: column;
     flex: 1;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
 }
 
 .cards>img {
