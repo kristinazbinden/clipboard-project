@@ -258,7 +258,7 @@ footer {
     }
 
     h2 {
-        font-size: 32px;
+        font-size: 26px;
         margin: 5px 0;
     }
 
@@ -365,11 +365,13 @@ footer {
         margin: 0;
         padding: 0;
         margin-bottom: 30px;
-        width: 100vw;
+        max-width: 80vw;
+        align-items: center;
     }
 
     .list-item>p {
         font-size: 14px;
+        text-align: center;
     }
 
     #responsive-screens {
@@ -392,7 +394,7 @@ footer {
         flex-direction: column;
         flex: 1;
         text-align: center;
-        padding: 20px;
+        padding: 20px 0;
     }
 
     .cards>img {
@@ -402,7 +404,8 @@ footer {
     }
 
     .cards>p {
-        font-size: 20px;
+        font-size: 14px;
+        max-width: 80vw;
     }
 
     #brands {
@@ -412,7 +415,7 @@ footer {
     }
 
     #brands>img {
-        width: 40%;
+        max-width: auto;
         margin: 10%;
     }
 
