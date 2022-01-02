@@ -14,6 +14,7 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 
 My version can be viewed here: https://kristina-zbinden-clipboard-landing-page.vercel.app/
+
 Original challenge can be found at: https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9
 
 
